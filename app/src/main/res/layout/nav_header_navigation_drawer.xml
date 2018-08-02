@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="160dp"
+    android:background="@drawable/header"
+    android:gravity="bottom"
+    android:orientation="vertical"
+
+    android:theme="@style/ThemeOverlay.AppCompat.Dark"
+    android:weightSum="1"
+    android:id="@+id/drawerHeaderBackground">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/drawerProfilePic"
+        android:src="@drawable/user_picture"
+       app:civ_border_width="3dp"
+        app:civ_border_color="@color/colorWhite"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="13dp"
+        android:scaleType="centerCrop"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/SemiTransparentWhite"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="5dp"
+        android:paddingStart="15dp"
+        android:paddingEnd="5dp"
+        android:paddingTop="5dp">
+        <TextView
+        android:id="@+id/drawerRetailerShopName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:text="Retailer Shop Name"
+        android:textColor="@android:color/background_dark"
+        android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/drawerRetailerName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Retailer Name"
+
+            android:layout_below="@+id/drawerRetailerShopName"
+            android:textColor="@android:color/background_dark"
+            android:textColorHighlight="@color/colorPrimaryDark"/>
+    </RelativeLayout>
+
+</RelativeLayout>

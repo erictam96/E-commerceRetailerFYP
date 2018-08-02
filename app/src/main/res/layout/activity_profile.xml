@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+
+        <include
+            android:id="@+id/profileToolbar"
+            layout="@layout/default_toolbar" />
+
+
+        <ImageView
+            android:id="@+id/CoverVolleyImageView"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@+id/profileToolbar"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:contentDescription="coverPic"
+            android:scaleType="centerCrop"
+
+
+            app:srcCompat="@mipmap/ic_photodefault" />
+
+
+        <ImageView
+            android:id="@+id/ProfileVolleyImageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignStart="@+id/CoverVolleyImageView"
+            android:layout_alignTop="@+id/CoverVolleyImageView"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="110dp"
+            android:background="@color/colorWhite"
+            android:contentDescription="profilePic"
+
+            android:padding="5dp"
+            android:scaleType="centerCrop" />
+        <!--android:background="@drawable/profile_border"-->
+
+
+
+
+
+
+
+        <Button
+            android:id="@+id/editProfileButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/profileTable"
+            android:layout_centerHorizontal="true"
+            android:text="@string/editProfile"
+            android:layout_margin="10dp"
+            android:backgroundTint="@color/orange"
+            android:textColor="@color/colorWhite"/>
+
+        <Button
+            android:id="@+id/changePasswordButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editProfileButton"
+            android:layout_centerHorizontal="true"
+            android:text="@string/chgPwd"
+            android:layout_margin="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ProfileVolleyImageView"
+            android:text="NEM Public key"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:id="@+id/nemlabel"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            />
+        <View android:layout_height="2dp"
+            android:background="@color/darkTransparentBlack"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/nemlabel"
+            android:layout_marginTop="-10dp"
+            android:layout_alignStart="@+id/nemlabel"
+            android:layout_alignEnd="@+id/nemlabel"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nemlabel"
+            android:text="d14bf00e9fb71190bb25e50dbc7ab42d693a8d56bc8e2c9db7a2394351fa9595"
+            android:id="@+id/nemID"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:textAlignment="center"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/nemID"
+            android:id="@+id/profileTable"
+            android:layout_margin="10dp"
+            android:orientation="vertical"
+            android:padding="10dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:id="@+id/shopNameLable"
+                    android:layout_width="0dp"
+                    android:layout_weight=".3"
+                    android:layout_height="wrap_content"
+                    android:text="@string/shopName2"
+                    android:textColor="@color/colorgrey"
+                    android:textStyle="bold"
+
+                    android:paddingBottom="5dp"
+                    
+                    />
+
+                <TextView
+                    android:id="@+id/shopNameDisplayText"
+                    android:layout_width="0dp"
+                    android:layout_weight=".7"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:paddingBottom="5dp"
+
+                    android:lines="2"
+                    android:maxLines="2"
+                    />
+            </LinearLayout>
+<View android:layout_height="2dp"
+    android:layout_width="match_parent"
+    android:background="@color/lightgrey"
+    />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/shopAddressLable"
+                    android:layout_width="0dp"
+                    android:layout_weight=".3"
+                    android:layout_height="wrap_content"
+                    android:text="@string/shopAdd"
+                    android:textColor="@color/colorgrey"
+                    android:textStyle="bold"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"/>
+
+                <TextView
+                    android:id="@+id/shopAddressDisplayText"
+                    android:layout_width="0dp"
+                    android:layout_weight=".7"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+
+                    android:lines="2"
+                    android:maxLines="3"/>
+
+            </LinearLayout>
+
+            <View android:layout_height="2dp"
+                android:layout_width="match_parent"
+                android:background="@color/lightgrey"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/shopOwnerNameLable"
+                    android:layout_width="0dp"
+                    android:layout_weight=".3"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ownerName2"
+                    android:textColor="@color/colorgrey"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/shopOwnerNameDisplayText"
+                    android:layout_width="0dp"
+                    android:layout_weight=".7"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+
+                    android:lines="2"
+                    android:maxLines="2"/>
+
+
+            </LinearLayout>
+
+            <View android:layout_height="2dp"
+                android:layout_width="match_parent"
+                android:background="@color/lightgrey"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+               >
+
+                <TextView
+                    android:id="@+id/shopOwnerContactLable"
+                    android:layout_width="0dp"
+                    android:layout_weight=".3"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ownerContact2"
+                    android:textColor="@color/colorgrey"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/shopOwnerContactDisplayText"
+                    android:layout_width="0dp"
+                    android:layout_weight=".7"
+                    android:layout_height="wrap_content"
+                    android:lines="2"
+
+                    android:maxLines="2"
+                    android:paddingBottom="5dp"
+                    android:paddingStart="10dp"
+                    android:paddingTop="5dp"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    />
+
+
+
+
+
+            </LinearLayout>
+
+
+            <View android:layout_height="2dp"
+                android:layout_width="match_parent"
+                android:background="@color/lightgrey"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:id="@+id/shopOwnerEmailLable"
+                    android:layout_width="0dp"
+                    android:layout_weight=".3"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ownerEmail"
+                    android:textColor="@color/colorgrey"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/shopOwnerEmailDisplayText"
+                    android:layout_width="0dp"
+                    android:layout_weight=".7"
+                    android:layout_height="wrap_content"
+                    android:lines="2"
+
+                    android:maxLines="2"
+                    android:paddingBottom="5dp"
+                    android:paddingStart="10dp"
+                    android:paddingTop="5dp"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    />
+
+
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+            <View android:layout_height="2dp"
+                android:layout_width="match_parent"
+                android:background="@color/lightgrey"
+                />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:id="@+id/shopRegistrationCodeLable"
+                    android:layout_width="0dp"
+                    android:layout_weight=".3"
+                    android:layout_height="wrap_content"
+
+                    android:text="@string/shopRegCode"
+                    android:textColor="@color/colorgrey"
+                    android:textStyle="bold"
+                    android:maxEms="5"
+                    android:maxLines="3"
+                    android:lines="3"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"/>
+
+                <TextView
+                    android:id="@+id/shopRegistrationCodeDisplayText"
+                    android:layout_width="0dp"
+                    android:layout_weight=".7"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+
+                    android:lines="2"
+                    android:maxLines="2"/>
+            </LinearLayout>
+            <View android:layout_height="2dp"
+                android:layout_width="match_parent"
+                android:background="@color/lightgrey"
+                />
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:id="@+id/shopDescriptionLable"
+                    android:layout_width="0dp"
+                    android:layout_weight=".3"
+                    android:layout_height="wrap_content"
+
+                    android:text="@string/shopDesc"
+                    android:textColor="@color/colorgrey"
+                    android:textStyle="bold"
+                    android:maxEms="5"
+                    android:maxLines="3"
+                    android:lines="3"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"/>
+
+                <TextView
+                    android:id="@+id/shopDescriptionDisplayText"
+                    android:layout_width="0dp"
+                    android:layout_weight=".7"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_column="1"
+                    android:inputType="textMultiLine"
+                    android:lines="6"
+                    android:maxLines="6"
+
+                    android:scrollbars="vertical"/>
+            </LinearLayout>
+            <View android:layout_height="2dp"
+                android:layout_width="match_parent"
+                android:background="@color/lightgrey"
+                />
+
+
+        </LinearLayout>
+
+
+
+
+    </RelativeLayout>
+
+
+</ScrollView>

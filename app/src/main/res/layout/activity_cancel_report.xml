@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CancelReportActivity">
+    <include
+        android:id="@+id/cancelReport"
+        layout="@layout/default_toolbar"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cancelReport"
+        android:id="@+id/dateRelative"
+        android:background="@color/light_grey">
+
+        <ImageView
+            android:id="@+id/datepickerbut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:contentDescription="calendar"
+            android:src="@mipmap/ic_calender" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/selectedMonth"
+            android:textSize="16sp"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/datepickerbut"
+            android:layout_marginEnd="10dp"
+            android:id="@+id/selectDateLabel"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/selectDateLabel"
+            android:layout_marginEnd="10dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:text="19/3/2018"
+            android:id="@+id/selectReportDate"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dateRelative"
+        android:id="@+id/headerLabel">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".4"
+            android:text="@string/canceltype"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:padding="10dp"
+            android:background="@color/orange"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".4"
+            android:text="@string/canceldetail"
+            android:textAlignment="center"
+            android:padding="10dp"
+            android:textSize="18sp"
+            android:background="@color/orange"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".2"
+            android:text="@string/count"
+            android:textAlignment="center"
+            android:padding="10dp"
+            android:textSize="18sp"
+            android:background="@color/orange"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/headerLabel"
+        android:id="@+id/cancelReportRecycler"/>
+
+
+
+</RelativeLayout>

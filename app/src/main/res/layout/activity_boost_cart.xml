@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BoostCartActivity">
+    <include
+        android:id="@+id/boostCartToolbar"
+        layout="@layout/default_toolbar"/>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/boostCartToolbar"
+        android:layout_above="@id/payRelative"
+        android:id="@+id/cartRecycler"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/payAll"
+        android:id="@+id/payRelative"
+        >
+        <View
+            android:id="@+id/line_below_shopping_cart_reycleview"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="1dp"
+            android:background="@color/colorLightGray"
+            />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/checkAll"
+            android:layout_margin="15dp"
+            android:text="Select all"
+            android:textSize="18sp"
+            android:textColor="@color/darkerGrey"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="@string/subtotal"
+            android:textSize="18sp"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/subtotalText"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/red"
+            android:layout_alignParentEnd="true"
+            android:text="RMXXX.XX"
+            android:textSize="18sp"
+            android:layout_centerVertical="true"
+            android:id="@+id/subtotalText"
+            android:layout_marginEnd="15dp"/>
+
+
+
+    </RelativeLayout>
+    <Button
+        android:id="@+id/payAll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/orange"
+        android:textColor="@color/colorWhite"
+        android:text="Pay now"
+        android:layout_alignParentBottom="true"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/emptyList"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:id="@+id/shopCartEmptyText"
+        android:visibility="invisible"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/shopCartEmptyText"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/shopCartEmptyImg"
+        android:src="@mipmap/ic_empty"
+        android:visibility="invisible"/>
+</RelativeLayout>

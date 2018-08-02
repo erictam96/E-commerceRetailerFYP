@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/packItemlayout">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_above="@+id/textView7"
+            android:layout_alignParentStart="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="19dp"
+            android:background="@android:color/darker_gray" />
+
+        <include
+            android:id="@+id/packItemtoolbar"
+            layout="@layout/default_toolbar" />
+
+        <Button
+            android:id="@+id/checkOutButton"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="@android:color/holo_red_light"
+            android:text="Check out" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/packItemtoolbar"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            android:text="Item List"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/textView9"
+            android:layout_alignEnd="@+id/view"
+            android:layout_marginEnd="16dp"
+            android:text="Quantity"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/checkOutButton"
+            android:layout_alignStart="@+id/textView5"
+            android:layout_marginBottom="60dp"
+            android:text="Drop Off Point" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView7"
+            android:layout_alignTop="@+id/textView7"
+            android:layout_marginTop="28dp"
+            android:text="TARUC CANTEEN 1"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView5"
+            android:layout_below="@+id/textView5"
+            android:layout_marginTop="16dp"
+            android:text="#31234 Razer Keyboard " />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView9"
+            android:layout_below="@+id/textView9"
+            android:layout_marginTop="13dp"
+            android:text="#5143512 Razer Mouse" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView10"
+            android:layout_below="@+id/textView10"
+            android:layout_marginTop="11dp"
+            android:text="#561515 LCD Display 21 inch" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView9"
+            android:layout_alignBottom="@+id/textView9"
+            android:layout_alignEnd="@+id/textView6"
+            android:layout_marginEnd="23dp"
+            android:text="1" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/textView11"
+            android:layout_alignEnd="@+id/textView12"
+            android:text="3" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView11"
+            android:layout_alignStart="@+id/textView13"
+            android:text="1" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView7"
+            android:layout_marginStart="17dp"
+            android:layout_toEndOf="@+id/textView9"
+            android:text="notes" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView15"
+            android:layout_alignTop="@+id/textView8"
+            android:text="Freegift - RM10 voucher"
+            android:textColor="@android:color/black" />
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+
+        android:textSize="14sp"
+        android:textColor="@color/colorWhite"
+        android:text="9"
+
+        android:paddingLeft="7dp"
+        android:paddingRight="7dp"
+        android:textStyle="bold"
+        android:id="@+id/notifyCount"
+        android:background="@drawable/notification_red"
+        />
+</RelativeLayout>

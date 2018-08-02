@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageButton
+        android:id="@+id/serialExit"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="5dp"
+        android:background="@color/transparentWhite"
+        android:contentDescription="deleteIcon"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/ic_sold" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Serial Code"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:id="@+id/serialVariantLabel"
+        android:textColor="@color/titleTextColor"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_marginBottom="10dp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/titleTextColor"
+        android:layout_below="@+id/serialExit"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/existSerial"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:id="@+id/serialLabel"
+        android:layout_below="@+id/serialVariantLabel"
+        android:textSize="16sp"
+        />
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_below="@+id/serialLabel"
+        android:layout_margin="20dp"
+        android:id="@+id/serialRecycler"
+        android:scrollbars="vertical" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/titleTextColor"
+        android:layout_below="@+id/serialRecycler"/>
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/newSerial"
+        android:layout_below="@+id/serialRecycler"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/newSerialLabel"
+        android:textSize="16sp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/newSerialLabel"
+        android:id="@+id/serialText"
+        android:layout_toStartOf="@+id/newSerialBut"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:hint="IMEv1: 1234-5678-9012-3456"
+        android:inputType="text" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/newSerialBut"
+        android:text="@string/add"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/newSerialLabel"/>
+</RelativeLayout>

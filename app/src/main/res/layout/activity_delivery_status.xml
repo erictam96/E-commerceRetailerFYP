@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DeliveryStatusActivity"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+    <requestFocus/>
+    <include
+        android:id="@+id/deliveryStatusToolbar"
+        layout="@layout/default_toolbar" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/searchBar"
+        android:layout_below="@id/deliveryStatusToolbar"
+        android:background="@drawable/search_border"
+        >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/searchText"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:hint="@string/search_here"
+            android:textSize="18sp"
+            android:padding="10dp"
+            android:layout_alignTop="@+id/searctBut"
+            android:layout_alignBottom="@+id/searctBut"
+           android:layout_marginStart="10dp"
+            android:layout_toStartOf="@+id/searctBut"/>
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@mipmap/ic_search_black_24dp"
+
+            android:id="@+id/searctBut"
+            android:padding="5dp"
+            android:layout_alignParentEnd="true"
+            />
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/dateRelative"
+        android:layout_below="@+id/searchBar"
+        android:background="@color/light_grey">
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@mipmap/ic_calender"
+            android:id="@+id/calendar"
+            android:layout_margin="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:id="@+id/dateLabel"
+            android:text="Selected date:"
+            android:padding="10dp"
+            android:textSize="16sp"
+
+            android:textColor="@color/black"
+            android:layout_toEndOf="@+id/calendar"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:id="@+id/selectedDate"
+            android:text="xx Jan 20XX "
+            android:padding="10dp"
+            android:textSize="16sp"
+            android:layout_toStartOf="@+id/dateChk"
+            android:textColor="@color/black"
+            android:layout_toEndOf="@+id/dateLabel"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:id="@+id/dateChk"/>
+    </RelativeLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/dateRelative"
+        android:id="@+id/deliveryStatusRecycler"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/emptyList"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:id="@+id/shopCartEmptyText"
+        android:visibility="invisible"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/shopCartEmptyText"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/shopCartEmptyImg"
+        android:src="@mipmap/ic_empty"
+        android:visibility="invisible"/>
+
+</RelativeLayout>

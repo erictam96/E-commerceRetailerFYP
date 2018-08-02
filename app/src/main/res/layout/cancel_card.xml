@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+        <View android:layout_height="2dp"
+            android:layout_width="match_parent"
+            android:background="@color/lightgrey"
+            android:layout_below="@+id/cincai"
+            />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/cincai">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".4"
+            android:text="@string/canceltype"
+            android:textAlignment="center"
+            android:textSize="14sp"
+            android:padding="10dp"
+            android:id="@+id/cancelType"            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".4"
+            android:text="@string/canceldetail"
+            android:textAlignment="center"
+            android:padding="10dp"
+            android:textSize="14sp"
+            android:id="@+id/cancelDetail"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".2"
+            android:text="@string/count"
+            android:textAlignment="center"
+            android:padding="10dp"
+            android:textSize="14sp"
+            android:id="@+id/count"
+            />
+</LinearLayout>
+
+
+
+
+</RelativeLayout>

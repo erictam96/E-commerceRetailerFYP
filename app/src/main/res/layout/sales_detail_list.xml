@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        android:layout_below="@+id/line_below_salesDateRelative"
+
+        android:layout_marginTop="5dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="Product Name"
+
+            android:lines="1"
+            android:maxLines="1"
+            android:id="@+id/prodNameList"
+            android:paddingEnd="2dp"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="Variant"
+
+            android:id="@+id/prodVariantList"
+            android:lines="1"
+            android:maxLines="1"
+            android:paddingEnd="2dp"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:text="Price"
+            android:textAlignment="center"
+            android:id="@+id/prodPriceList"
+            android:paddingEnd="2dp"
+            android:lines="1"
+            android:maxLines="1"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:text="Qty"
+            android:textAlignment="center"
+            android:id="@+id/prodQtyList"
+            android:lines="1"
+            android:maxLines="1"/>
+
+    </LinearLayout>
+</RelativeLayout>

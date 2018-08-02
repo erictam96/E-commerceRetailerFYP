@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".OrderConfirmActivity">
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/orderConfirmMsg"
+    android:layout_centerHorizontal="true"
+    android:textSize="18sp"
+    android:maxEms="12"
+    android:textAlignment="center"
+    android:textStyle="bold"
+    android:id="@+id/stockReminderMsg"
+    android:layout_margin="5dp"/>
+    <LinearLayout
+        android:layout_below="@+id/stockReminderMsg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/uploadlinear"
+        android:padding="2dp">
+
+        <ImageView
+
+            android:id="@+id/realImg1"
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:contentDescription="ConfirmImage1"
+            android:scaleType="fitXY"
+            android:src="@drawable/photo" />
+
+        <ImageView
+            android:id="@+id/realImg2"
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:contentDescription="ConfirmImage2"
+            android:scaleType="fitXY"
+            android:src="@drawable/photo" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lineartext"
+        android:layout_below="@id/uploadlinear"
+        android:padding="2dp">
+        <TextView
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/label1"
+            android:src="@drawable/photo"
+            android:text="@string/productPht"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_margin="5dp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/label"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:text="@string/serialcode"
+            android:layout_margin="5dp"
+            android:textSize="18sp"
+            android:src="@drawable/photo"/>
+    </LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/orange"
+        android:text="@string/confirmUpload"
+        android:layout_below="@+id/lineartext"
+        android:textColor="@color/colorWhite"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:id="@+id/uploadPhotobut"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="match_parent" android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:background="@color/colorWhite"
+        >
+
+        <include
+            android:id="@+id/editProfileToolbar"
+            layout="@layout/default_toolbar"/>
+
+        <ImageButton
+            android:id="@+id/coverPictureButton"
+            android:layout_width="fill_parent"
+            android:layout_height="200dp"
+            android:layout_below="@+id/editProfileToolbar"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:layout_marginTop="13dp"
+            android:background="@color/colorWhite"
+            android:contentDescription="coverPic"
+            android:onClick="selectimage"
+            android:scaleType="centerCrop"
+            app:srcCompat="@mipmap/ic_photodefault" />
+
+        <ImageButton
+            android:id="@+id/profilePictureButton"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignTop="@+id/coverPictureButton"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="110dp"
+            android:background="@color/colorWhite"
+            android:contentDescription="profilePic"
+            android:onClick="selectimage"
+            android:padding="5dp"
+            android:scaleType="centerCrop"
+
+            app:srcCompat="@mipmap/ic_usericon" />
+
+        <View android:layout_height="2dp"
+            android:background="@color/lightgrey"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/profilePictureButton"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:id="@+id/line_below_profimg"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/line_below_profimg"
+            android:layout_marginTop="20dp"
+            android:text="@string/name"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginStart="20dp"
+            android:id="@+id/nametxt"
+            />
+        <View android:layout_height="2dp"
+            android:background="@color/lightgrey"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/nametxt"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:id="@+id/line_below_name"
+            />
+        <EditText
+            android:id="@+id/editOwnerName"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/contactlabel"
+            android:layout_below="@+id/line_below_profimg"
+            android:layout_marginTop="7dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="20dp"
+android:layout_toStartOf="@+id/erase_name"
+            android:ems="10"
+            android:hint="@string/newOwnerName"
+            android:layout_centerHorizontal="true"
+            android:inputType="textPersonName" />
+
+        <ImageButton
+            android:id="@+id/erase_name"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/line_below_profimg"
+            android:layout_marginEnd="10dp"
+            android:background="@color/colorWhite"
+            android:contentDescription="edit"
+            android:src="@mipmap/ic_erase" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/line_below_name"
+            android:layout_marginTop="20dp"
+            android:text="@string/contact"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginStart="20dp"
+            android:id="@+id/contactlabel"
+            />
+        <View android:layout_height="2dp"
+            android:background="@color/lightgrey"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/contactlabel"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:id="@+id/line_below_contact"
+            />
+        <EditText
+            android:id="@+id/editOwnerContact"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@+id/line_below_name"
+            android:layout_marginTop="14dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="20dp"
+            android:ems="10"
+            android:hint="@string/newContact"
+            android:layout_toEndOf="@+id/contactlabel"
+            android:layout_toStartOf="@+id/erase_contact"
+            android:inputType="textPersonName" />
+
+        <ImageButton
+            android:id="@+id/erase_contact"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/line_below_name"
+            android:layout_marginEnd="10dp"
+            android:background="@color/colorWhite"
+            android:contentDescription="edit"
+            android:src="@mipmap/ic_erase" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/line_below_contact"
+            android:layout_marginTop="20dp"
+            android:text="@string/desc"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginStart="20dp"
+            android:id="@+id/desctxt"/>
+
+        <ImageButton
+            android:id="@+id/erase_desc"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/line_below_contact"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorWhite"
+            android:contentDescription="edit"
+            android:src="@mipmap/ic_erase" />
+
+        <View android:layout_height="5dp"
+            android:background="@color/lightgrey"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/desctxt"
+
+
+            android:layout_alignStart="@+id/desctxt"
+            android:layout_alignEnd="@+id/desctxt"
+            android:id="@+id/line_below_desc"
+            />
+        <EditText
+            android:id="@+id/editShopDescription"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:layout_marginEnd="20dp"
+            android:layout_below="@+id/desctxt"
+            android:layout_marginStart="20dp"
+            android:ems="10"
+            android:hint="@string/newShopDesc"
+            android:gravity="start"
+            android:inputType="textMultiLine"
+            android:lines="6"
+            android:maxLines="6"/>
+
+
+        <Button
+            android:id="@+id/editProfileSubmitButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/editShopDescription"
+            android:layout_marginTop="14dp"
+            android:text="@string/confirmSubmit"
+            android:backgroundTint="@color/orange"
+            android:textColor="@color/colorWhite"/>
+
+
+    </RelativeLayout>
+</ScrollView>
+

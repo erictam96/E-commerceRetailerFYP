@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/boostDialog"
+    android:padding="10dp">
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="200dp"
+        android:id="@+id/prodimage"
+        android:src="@drawable/photo"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="Product picture" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:padding="10dp"
+        android:layout_alignBottom="@+id/prodimage"
+        android:background="@color/SemiTransparentWhite"
+        android:text="Item name here"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:id="@+id/itemNameText"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/period"
+        android:layout_below="@+id/prodimage"
+        android:id="@+id/periodText"
+        android:textSize="16sp"
+        android:paddingStart="10dp"
+        android:paddingTop="20dp"
+        tools:ignore="RtlSymmetry" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/periodText"
+        android:layout_below="@+id/prodimage"
+        android:textSize="16sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+
+        android:entries="@array/period"
+        android:id="@+id/periodSpinner"
+        android:layout_toStartOf="@+id/dayUnit"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/day"
+        android:layout_below="@+id/prodimage"
+        android:textSize="16sp"
+        android:layout_marginTop="20dp"
+
+        android:id="@+id/dayUnit"
+        android:layout_alignParentEnd="true"
+        android:paddingEnd="20dp"
+        tools:ignore="RtlSymmetry" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/periodText"
+        android:text="XXX day left"
+        android:layout_below="@+id/prodimage"
+        android:textSize="16sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="15dp"
+        android:padding="5dp"
+        android:id="@+id/dayLeftText"
+        android:visibility="invisible"
+        android:layout_toStartOf="@+id/dayUnit"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/price2"
+        android:layout_below="@+id/dayLeftText"
+        android:textSize="16sp"
+        android:paddingStart="10dp"
+        android:paddingTop="10dp"
+        android:id="@+id/periodLabel"
+        tools:ignore="RtlSymmetry" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dayLeftText"
+        android:textSize="16sp"
+        android:layout_marginLeft="20dp"
+        android:layout_toEndOf="@+id/periodLabel"
+        android:layout_toStartOf="@+id/priceUnit"
+        android:id="@+id/priceText"
+        android:layout_marginRight="20dp"
+        android:inputType="numberDecimal"
+        tools:ignore="LabelFor"
+        android:text="0.10"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/perDay"
+        android:layout_below="@+id/dayLeftText"
+        android:textSize="16sp"
+
+        android:paddingTop="10dp"
+        android:id="@+id/priceUnit"
+        android:layout_alignParentEnd="true"
+        android:paddingEnd="20dp"
+        tools:ignore="RtlSymmetry" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/periodLabel"
+       android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:textSize="16sp"
+        android:text="TOTAL: RM  xxx.xx"
+        android:id="@+id/boostPrice"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/boostPrice"
+        android:layout_marginTop="5dp">
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Check - out"
+            android:layout_weight="1"
+            android:backgroundTint="@color/scarletRed"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold"
+            android:id="@+id/checkout"
+            tools:ignore="ButtonStyle" />
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Add to cart"
+            android:layout_weight="1"
+            android:backgroundTint="@color/orange"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold"
+            android:id="@+id/addToCart"
+            tools:ignore="ButtonStyle" />
+    </LinearLayout>
+
+</RelativeLayout>

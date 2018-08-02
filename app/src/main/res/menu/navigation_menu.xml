@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/upperMenu"
+        >
+        <item android:id="@+id/orderToConfirmMenuBtn"
+            android:title="@string/orderToConfirm"
+            app:actionLayout="@layout/order_confirm_notification"
+            />
+        <item android:id="@+id/orderToPackMenuBtn"
+            android:title="@string/ordertopack"
+            app:actionLayout="@layout/order_confirm_notification"
+            />
+
+        <item android:id="@+id/deliveryStatusBtn"
+            android:title="@string/deliveryStatus"
+            />
+    </group>
+    <group android:checkableBehavior="all"
+        android:id="@+id/middleMenu">
+        <item android:id="@+id/registerNewProductsMenuBtn"
+            android:title="@string/registerNewProd"
+
+            />
+
+        <item
+            android:id="@+id/manageProductsMenuBtn"
+            android:title="@string/manageProd" />
+
+        <item
+            android:id="@+id/boostProductsBtn"
+            android:title="@string/boostProduct"/>
+
+        <item
+            android:id="@+id/boostCartBtn"
+            android:title="@string/cartChkout"
+            app:actionLayout="@layout/order_confirm_notification"
+            />
+
+    </group>
+    <group android:checkableBehavior="all"
+        android:id="@+id/shopMenu">
+        <item
+            android:id="@+id/viewSalesReportMenuBtn"
+            android:title="@string/viewSalesReport" />
+
+        <item
+            android:id="@+id/viewCancelReportBtn"
+            android:title="@string/cancelReport" />
+
+        <item
+            android:id="@+id/profileMenuBtn"
+            android:title="@string/profile" />
+    </group>
+    <group android:checkableBehavior="all"
+        android:id="@+id/lowerMenu">
+        <item android:id="@+id/settingMenuBtn"
+            android:title="@string/setting"
+            />
+        <item android:id="@+id/aboutUsMenuBtn"
+            android:title="@string/aboutus"
+            />
+    </group>
+
+</menu>

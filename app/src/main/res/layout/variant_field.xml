@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linear1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:layout_marginTop="5dp"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/linear2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_toStartOf="@+id/btnDeleteVariant"
+        android:layout_marginTop="20dp">
+
+        <LinearLayout
+            android:id="@+id/linearview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView73"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".2"
+                android:text="@string/type"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/edtVariant"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:maxLength="20"
+                android:hint="@string/variant"
+                android:inputType="textPersonName"
+                android:textColor="@color/black"
+                android:layout_weight=".6"/>
+
+            <EditText
+                android:id="@+id/edtQuantity"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:maxLength="5"
+                android:ems="10"
+                android:hint="@string/quantity"
+                android:inputType="number"
+                android:textAlignment="textEnd"
+                android:textColor="@color/black"
+                android:layout_weight=".3"/>
+
+            <TextView
+                android:id="@+id/textView72"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".2"
+                android:text="@string/qty"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".2"
+                android:text="RM"
+
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/edtPrice"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:maxLength="7"
+                android:ems="10"
+                android:hint="@string/price"
+                android:inputType="numberDecimal"
+                android:textColor="@color/black"
+                android:layout_weight=".6"/>
+
+            <EditText
+                android:id="@+id/edtDiscount"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:maxLength="2"
+                android:ems="10"
+                android:hint="@string/discount"
+                android:inputType="number"
+                android:textAlignment="textEnd"
+                android:layout_weight=".3"/>
+
+            <TextView
+                android:id="@+id/textView49"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".2"
+                android:text="%"
+                android:textSize="18sp" />
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/btnDeleteVariant"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="end"
+        android:layout_marginStart="5dp"
+        android:background="@color/transparent"
+        android:contentDescription="deleteButton"
+        android:onClick="onDelete"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/ic_sold" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/titleTextColor"
+        android:layout_below="@+id/linear2"/>
+
+</RelativeLayout>

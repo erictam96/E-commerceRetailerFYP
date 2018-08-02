@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageButton
+            android:id="@+id/confirmSerialExit"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="5dp"
+            android:background="@color/transparentWhite"
+            android:contentDescription="deleteIcon"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_sold" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_toStartOf="@+id/confirmSerialExit"
+            android:layout_height="wrap_content"
+            android:text="Product name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:id="@+id/confirmSerialNameLabel"
+            android:textColor="@color/titleTextColor"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textAlignment="center"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_toStartOf="@+id/confirmSerialExit"
+            android:layout_height="wrap_content"
+            android:text="Product variant"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/confirmSerialVariantLabel"
+            android:textColor="@color/titleTextColor"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_below="@+id/confirmSerialNameLabel"
+            android:layout_marginBottom="10dp"
+            android:textAlignment="center"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/titleTextColor"
+            android:layout_below="@+id/confirmSerialVariantLabel"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/assignSerialMsg"
+            android:layout_marginTop="20dp"
+            android:id="@+id/confirmSerialLabel"
+            android:layout_below="@+id/confirmSerialVariantLabel"
+            android:textSize="16sp"
+            android:textAlignment="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            />
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_below="@+id/confirmSerialLabel"
+            android:layout_margin="20dp"
+            android:id="@+id/confirmSerialRecycler"
+            android:scrollbars="vertical" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/titleTextColor"
+            android:layout_above="@+id/assignedLabel"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/assignedSerial"
+            android:layout_below="@+id/confirmSerialRecycler"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/assignedLabel"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_below="@+id/assignedLabel"
+            android:layout_margin="20dp"
+            android:id="@+id/assignedSerialRecycler"
+            android:scrollbars="vertical" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/remainingAssignSerial"
+            android:layout_below="@+id/assignedSerialRecycler"
+            android:text="@string/assignRemain"
+            android:paddingStart="20dp"
+            android:paddingBottom="10dp"/>
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/insertSerialRelative"
+    android:layout_below="@+id/remainingAssignSerial"
+    android:visibility="gone">
+    <View
+
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/titleTextColor"
+        />
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New serial"
+
+        android:layout_centerHorizontal="true"
+        android:id="@+id/newSerialLabel"
+        android:textSize="16sp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/newSerialLabel"
+        android:id="@+id/serialText"
+        android:layout_toStartOf="@+id/confirmNewSerialBut"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:hint="IMEv1: 1234-5678-9012-3456"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/confirmNewSerialBut"
+        android:text="Add"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/newSerialLabel"/>
+</RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/titleTextColor"
+            android:layout_below="@+id/insertSerialRelative"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/insertSerialRelative"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/insertSerial"
+                android:padding="20dp"
+                android:id="@+id/insertSerialBut"
+                android:textStyle="bold"
+                android:backgroundTint="@color/hintTextColor"
+                android:maxEms="10"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/donePackBut"
+                android:text="@string/donePack"
+                android:padding="20dp"
+
+
+                android:backgroundTint="@color/orange"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"
+                android:layout_marginStart="60dp"
+                android:maxEms="10"
+                />
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/serialProgressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/confirmSerialLabel"
+            android:layout_above="@+id/assignedLabel"
+            android:layout_centerHorizontal="true"
+            />
+        <ProgressBar
+            android:id="@+id/assignedSerialProgressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/assignedLabel"
+            android:layout_above="@+id/remainingAssignSerial"
+            android:layout_centerHorizontal="true"
+            />
+
+    </RelativeLayout>
+</ScrollView>

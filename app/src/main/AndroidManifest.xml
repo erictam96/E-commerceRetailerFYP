@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ecommerce.merchant.fypproject">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_cashierbook_logo"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_cashierbook_logo_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.ecommerce.merchant.fypproject.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/paths" />
+        </provider>
+
+        <activity
+            android:name="com.ipay.IpayAcitivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ipay.IpayAcitivityR"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SplashActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".FeedbackActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PackItemList"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".RegisterProductActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ItemUpdateActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MyPostActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DailyReportActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AboutUs"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".EditProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ChangePasswordActivity"
+            android:screenOrientation="portrait" />
+
+        <service android:name=".Service.FirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".Service.FirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="78c597d760f356229aa1d1c4839f1771faa6ae99"
+            />
+
+        <activity
+            android:name=".OrderConfirmActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NotificationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PrivacyPolicy"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ContactUsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TermOfServicesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".BoostActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".BoostCartActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".DeliveryStatusActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".CancelReportActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".DeliveryStatusActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ChatListActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ChatActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize"/>
+    </application>
+
+</manifest>

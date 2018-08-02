@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="size_array">
+        <item>small</item>
+        <item>medium</item>
+        <item>large</item>
+        <item>x-large</item>
+    </string-array>
+    <string-array name="target_array">
+        <item>Electronic Accessories</item>
+        <item>Automotive</item>
+        <item>Electronic Devices</item>
+        <item>Home and life-style</item>
+        <item>Home Appliance</item>
+        <item>Health and Beauty</item>
+        <item>Babies and toys </item>
+        <item>Grocery and pets</item>
+        <item>Men Fashion</item>
+        <item>Women Fashion</item>
+        <item>Fashion Accessories</item>
+        <item>Sport and Travel</item>
+    </string-array>
+
+    <string-array name="category_array">
+        <item>All Categories</item>
+        <item>Electronic Accessories</item>
+        <item>Automotive</item>
+        <item>Electronic Devices</item>
+        <item>Home and life-style</item>
+        <item>Home Appliance</item>
+        <item>Health and Beauty</item>
+        <item>Babies and toys </item>
+        <item>Grocery and pets</item>
+        <item>Men Fashion</item>
+        <item>Women Fashion</item>
+        <item>Fashion Accessories</item>
+        <item>Sport and Travel</item>
+    </string-array>
+
+    <string-array name="select_array">
+        <item>Camera</item>
+        <item>Gallery</item>
+        <item>Remove</item>
+        <item>Cancel</item>
+    </string-array>
+    <string-array name="select_arraywithoutRemove">
+        <item>Camera</item>
+        <item>Gallery</item>
+        <item>Cancel</item>
+    </string-array>
+
+    <string-array name="condition_array1">
+        <item>All</item>
+        <item>New</item>
+        <item>Used</item>
+    </string-array>
+
+    <string-array name="feedback_array">
+        <item>General Feedback</item>
+        <item>Faulty Issue</item>
+        <item>Spam or Abuse</item>
+    </string-array>
+
+    <string-array name="period">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+    </string-array>
+
+</resources>

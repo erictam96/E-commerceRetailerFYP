@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/cardview1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+
+        card_view:cardCornerRadius="5dp"
+        card_view:cardElevation="10dp"
+        card_view:contentPadding="2dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="customer name"
+                android:layout_margin="5dp"
+                android:id="@+id/customerNameText"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/orderDate"
+                android:layout_toStartOf="@id/orderDateText"
+                android:layout_margin="5dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="xx-xx-xxxx"
+                android:layout_margin="5dp"
+                android:id="@+id/orderDateText"/>
+            <View
+                android:id="@+id/lineBelowOrderDate"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/orderDateText"
+                android:background="@color/orange" />
+
+            <ImageView
+                android:id="@+id/orderItemImg"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_below="@id/lineBelowOrderDate"
+                android:layout_margin="10dp"
+                android:contentDescription="productImage"
+                android:src="@drawable/photo" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/orderItemNameLabel"
+                android:text="@string/item"
+                android:layout_below="@id/lineBelowOrderDate"
+                android:layout_toRightOf="@id/orderItemImg"
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/orderItemNameText"
+                android:text="Coca-cola "
+                android:layout_below="@id/lineBelowOrderDate"
+                android:layout_toEndOf="@id/orderItemNameLabel"
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/orderItemVariantLabel"
+                android:text="@string/var"
+                android:layout_below="@id/orderItemNameText"
+                android:layout_toEndOf="@id/orderItemImg"
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/orderItemVariantText"
+                android:text="Zero flavor"
+                android:layout_below="@id/orderItemNameText"
+                android:layout_toRightOf="@id/orderItemVariantLabel"
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/orderItemQtyLabel"
+                android:text="@string/qty2"
+                android:layout_below="@+id/orderItemVariantText"
+                android:layout_toRightOf="@+id/orderItemImg"
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/orderItemQtyText"
+                android:text="10"
+                android:layout_below="@+id/orderItemVariantText"
+                android:layout_toRightOf="@id/orderItemQtyLabel"
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/confirmStock"
+                android:layout_below="@+id/orderItemImg"
+                android:id="@+id/snapPhotoBut"
+                android:layout_marginLeft="5dp"
+                />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/outOfStock"
+                android:backgroundTint="@color/scarletRed"
+                android:id="@+id/outOfStockBut"
+                android:textStyle="bold"
+                android:textColor="@color/colorWhite"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/orderItemImg"
+                android:layout_marginRight="5dp"/>
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>
