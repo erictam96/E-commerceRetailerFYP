@@ -2,8 +2,8 @@
 This Android App is for my university final year project. This Merchant app allow merchant to sell their products. This project has 3 app (Customer, Runner and Merchant). You can refer to my github repo and backend PHP is not published in Github. Thank you
 
 # Login
-## ID : r@r.com
-## PASSWORD: 123456
+- ID : r@r.com
+- PASSWORD: 123456
 
 
 # Funtional Module
