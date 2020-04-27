@@ -1,5 +1,5 @@
 # E-commerce Retailer Android App FYP
-This Android App is for my university final year project. This Merchant app allow merchant to sell their products. This project has 3 app (Customer, Runner and Merchant). You can refer to my github repo and backend PHP is not published in Github. Thank you
+This Android App is for my university final year project. This Merchant app allow merchant to sell their products. This project has 3 app (Customer, Runner and Merchant). You can refer to my github repo and give me your github ID for invitations for backend PHP code. Thank you
 
 # Login
 - ID : r@r.com
