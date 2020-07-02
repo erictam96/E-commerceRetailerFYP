@@ -5,6 +5,11 @@ This Android App is for my university final year project. This Merchant app allo
 - ID : r@r.com
 - PASSWORD: 123456
 
+# Youtube Link
+Source Code Explanation
+https://youtu.be/mXxaPKRWa6I
+</br>App Demo
+https://youtu.be/BiTefBBHnVQ
 
 # Funtional Module
 - Register product with serial number, variant, quantity, discount
