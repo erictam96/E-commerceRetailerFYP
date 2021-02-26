@@ -6,9 +6,6 @@ Default
 - ID : r@r.com
 - PASSWORD: 123456
 
-Register Retailer Link:
-https://ecommercefyp.000webhostapp.com//retailer/retailer_registration.html
-
 # Youtube Link
 Source Code Explanation
 https://youtu.be/mXxaPKRWa6I
